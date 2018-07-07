@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background: white;
+}
+
+div.display {
+    background: lightskyblue;
+    padding: 10px;
+}
+
+div.score {
+    background: slateblue;
+    margin: 10px;
+    padding: 10px;
+}
