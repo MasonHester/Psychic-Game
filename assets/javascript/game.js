@@ -44,7 +44,7 @@ document.onkeyup = function(event) {
     // If game is not over
 
     if (gameOver !== true) {
-        // if (userGuess = "a" || "b" || "c" || "d" || "e" || "f" || "g" || "h" || "i" || "j" || "k" || "l" || "m" || "n" || "o" || "p" || "q" || "r" || "s" || "t" || "u" || "v" || "w" || "x" || "y" || "z") {
+        if (userGuess === "a" || "b" || "c" || "d" || "e" || "f" || "g" || "h" || "i" || "j" || "k" || "l" || "m" || "n" || "o" || "p" || "q" || "r" || "s" || "t" || "u" || "v" || "w" || "x" || "y" || "z") {
             if (userGuess === computerGuess) {
                 // Increments wins, sets game as over, displays win
                 wins++;
@@ -75,11 +75,11 @@ document.onkeyup = function(event) {
                     displayIncorrectGuesses.innerHTML = "Incorrect Guesses: " + incorrectGuesses;
                 }
             }
-        // }
+        }
 
-        // else {
-        //     alert("Please choose a valid letter");
-        // }
+        else {
+            alert("Please choose a valid letter");
+        }
     }
 
     statusCheck();
